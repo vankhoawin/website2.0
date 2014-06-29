@@ -24,7 +24,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right col-md-9">
-            <li class="col-md-2"><a href="#">About</a></li>
+            <li class="col-md-2 {% if request.path == '/about' %} active {% endif %}"><a href="{{ url_for('about') }}">About</a></li>
             <li class="col-md-2 {% if request.path == '/resume' %} active {% endif %}"><a href="{{ url_for('resume') }}">Resume</a></li>
             <li class="col-md-2"><a href="#">Projects</a></li>
             <li class="col-md-3 {% if request.path == '/photography' %} active {% endif %}"><a href="{{ url_for('photography') }}">Photography</a></li>

@@ -14,6 +14,8 @@ html, a, li, ul {
 }
 
 body {
+  /*background-image: url('../media/background.jpg');*/
+  background-size: cover;
   padding-top: 110px;
   font-size: 3em;
   -webkit-font-smoothing: antialiased;
@@ -31,17 +33,29 @@ div #header {
     font-weight: bold;
 }
 
+.navbar {
+    margin-bottom: 0px;
+}
+
 .navbar-header a{
     font-size: 1.5em;
 }
 
 .navbar-fixed-top {
   border: 0;
-  padding:40px 0px 40px 110px;
+  padding:40px 0px 20px 120px;
 }
 
 .navbar-right li {
     text-align: center;
+}
+
+
+.navbar-right > li:hover,
+.navbar-fixed-top > li:focus,
+.navbar-fixed-top li a:hover,
+.navbar-fixed-top li a:focus {
+    background-color: white;
 }
 
 .navbar-right .active {
