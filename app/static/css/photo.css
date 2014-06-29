@@ -1,0 +1,8 @@
+div #photo-body {
+    z-index: 3;
+}
+
+
+.sidebar {
+  display: none;
+}

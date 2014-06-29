@@ -1,0 +1,10 @@
+#page-body {
+    padding: 12.2em 0em;
+    margin: 0em 5em;
+    border: 0.09em solid black;
+    background-color: white;
+}
+
+.row {
+    padding:0em 1em;
+}

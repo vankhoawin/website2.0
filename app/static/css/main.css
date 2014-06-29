@@ -1,34 +1,57 @@
-/*
- * Base structure
- */
+@font-face {
+    font-family: CODE;
+    src: url('../fonts/CODE%20Light.otf');
+}
 
-/* Move down content because we have a fixed navbar that is 50px tall */
+@font-face {
+    font-family: CODE;
+    src: url('../fonts/CODE%20Bold.otf');
+    font-weight: bold;
+}
+
+html, a, li, ul {
+    color: black;
+}
+
 body {
-  padding-top: 80px;
+  padding-top: 110px;
+  font-size: 3em;
+  -webkit-font-smoothing: antialiased;
 }
 
-
-/*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
 
 /*
  * Top navigation
  * Hide default border to remove 1px line.
  */
+
+div #header {
+    z-index: 100;
+    font-family: CODE;
+    font-weight: bold;
+}
+
+.navbar-header a{
+    font-size: 1.5em;
+}
+
 .navbar-fixed-top {
   border: 0;
-  padding:25px 0px;
+  padding:40px 0px 40px 110px;
+}
+
+.navbar-right li {
+    text-align: center;
+}
+
+.navbar-right .active {
+    text-decoration: underline;
 }
 
 .sidebar {
-  display: none;
+    margin-top: 90px;
 }
+
 @media (min-width: 768px) {
   .sidebar {
     position: fixed;
@@ -46,10 +69,11 @@ body {
 }
 
 .nav-sidebar {
-  margin-top:29px;
-  margin-right: -21px; /* 20px padding + 1px border */
+  margin-top: -15px;
+  margin-right: -16px; /* 20px padding + 1px border */
   margin-bottom: 20px;
   margin-left: -20px;
+  font-size: 0.8em;
 }
 .nav-sidebar > li > a {
   padding-right: 20px;
