@@ -12,6 +12,18 @@ html, body {
   width: 100%;
 }
 
+@font-face {
+    font-family: CODE;
+    src: url('../fonts/CODE%20Light.otf');
+}
+
+@font-face {
+    font-family: CODE;
+    src: url('../fonts/CODE%20Bold.otf');
+    font-weight: bold;
+}
+
+
 /* padded section */
 .pad-section {
   padding: 50px 0;
@@ -33,9 +45,33 @@ html, body {
   padding: 0;
 }
 
+.navbar {
+    padding: 1% 0%;
+    font-family: CODE, Helvetica, Arial;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand {
+    font-size: 40px;
+}
+
+
+.navbar li {
+    font-size: 20px;
+}
+
+.navbar div div, ul {
+    padding: 0% 3%;
+}
+
+.layout-body {
+    margin: 0% 3%;
+    background-color: AntiqueWhite;
+}
+
 /* additional sections */
 #home {
-  background: url(../images/home.jpg) no-repeat center center fixed; 
+  background: url(../media/background.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -47,6 +83,7 @@ html, body {
 }
 
 #about {
+    padding: 0% 0% 30% 0%;
 }
 
 #services {
@@ -66,9 +103,9 @@ html, body {
 }
 
 #information {
-  background: url(../images/estate.jpg) no-repeat center center fixed; 
+  background: url(../media/background.jpg) no-repeat center center fixed;
   display: table;
-  height: 800px;
+  height: 875px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
