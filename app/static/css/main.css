@@ -9,6 +9,7 @@
     font-weight: bold;
 }
 
+
 html, a, li, ul {
     color: black;
 }
@@ -29,7 +30,7 @@ body {
 
 div #header {
     z-index: 100;
-    font-family: CODE;
+    font-family: Ubuntu;
     font-weight: bold;
 }
 

@@ -4,8 +4,8 @@ from pyfb import Pyfb
 app = Flask(__name__)      
  
 @app.route('/')
-def home():
-  return render_template('layout.html')
+def cover():
+  return render_template('cover.html')
 
 @app.route('/photography')
 def photography():

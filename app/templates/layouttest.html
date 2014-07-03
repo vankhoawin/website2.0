@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Raleway:300,400' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -43,38 +44,28 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="layout-body">
-
-
-      <!-- fourth section - Information -->
-      <div id="information" class="pad-section">
-        <div class="container">
-          <div class="row">
-              <br><br><br><br>
-            <div class="col-sm-6">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Additional information</h2>
-                </div>
-                <div class="panel-body lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h2 class="panel-title">Additional information</h2>
-                </div>
-                <div class="panel-body lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet.
-                </div>
-              </div>
-            </div>
+  <!-- fourth section - Information -->
+      <!--<div id="information" class="pad-section">-->
+      <div id="information" class="container-fluid">
+        <div class="row-fluid">
+          <div class="span6">
+            <img class="img-responsive" src="{{ url_for('static', filename='media/header.jpg') }}" />
           </div>
+            <div class="content">
+              <h1>photography</h1>
+              <h1>web apps</h1>
+              <h1>travel</h1>
+            </div>
         </div>
       </div>
       <!-- /fourth section -->
+
+
+
+  <div class="layout-body">
+
+
+
 
 
         <!-- second section - About -->
@@ -101,9 +92,8 @@
 
   <!-- footer -->
   <footer>
-    <hr />
     <div class="container">
-      <p class="text-right">Copyright &copy; Your Company 2014</p>
+      <p class="text-right">Copyright &copy; Van Nguyen 2014</p>
     </div>
   </footer>
   <!-- /footer -->
