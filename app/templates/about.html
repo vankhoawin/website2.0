@@ -54,7 +54,7 @@
 
           <div style="font-size:22px !important">
             <h1>
-              In my free time I like to hike and photograph, both more often than not at the same time. Check out
+              In my free time I like to hike and photograph, often at the same time. Check out
               my <a href="{{ url_for('photography') }}">photography!</a>
             </h1>
             <h1>
@@ -76,7 +76,7 @@
           <div class="col-sm-12">
 
             {% for i in range(12) %}
-              <a href="{{ album_links[i] }}" class="col-sm-3 albums" style="background: black; padding:0; margin:0;">
+              <a href="{{ album_links[i] }}" target="_blank" class="col-sm-3 albums" style="background: black; padding:0; margin:0;">
                 <img src= "../static/media/music{{i}}.jpg" style="width:285px; height:285px;">
                 <h1>{{ albums[i] }}</h1>
               </a>
