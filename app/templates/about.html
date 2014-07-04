@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+
+
 <!-- fourth section - Information -->
       <!--<div id="information" class="pad-section">-->
       <div id="information" class="container-fluid">
@@ -9,34 +12,79 @@
             <img class="img-responsive" src="{{ url_for('static', filename='media/header.jpg') }}" />
           </div>
             <div class="content">
-              <h1>web design</h1>
-              <h1>web development</h1>
-              <h1>photography</h1>
+              <h1 id="about-header1">web design</h1>
+              <h1 id="about-header2">web development</h1>
+              <h1 id="about-header3">photography</h1>
             </div>
         </div>
       </div>
       <!-- /fourth section -->
-
-    <br>
-    <br>
-    <hr />
     <div class="layout-body">
-        <!-- second section - About -->
+
+        <br>
+       <!-- second section - About -->
       <div id="about" class="pad-section">
         <div class="container">
           <div class="row">
             <br><br><br><br>
-            <div class="col-sm-6">
-              <img src="{{ url_for('static', filename='media/background.jpg') }}" alt="" />
+            <div class="col-sm-6" style="width:40%">
+              <img src="{{ url_for('static', filename='media/aboutme.jpg') }}" alt="" />
             </div>
-            <div class="col-sm-6 text-center">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.</p>
+            <div class="col-sm-6" style="width:60%">
+              <h2>Hey there, I'm Van.</h2>
+              <br>
+              <h1>
+                I'm a web developer and designer currently enrolled at UCI. Creating an immersive experience as well
+                as a maintainable back-end is what I strive for in a project. There should be no confusion as to
+                what's going on – that goes for both the interface and the code.
+              </h1>
+              <h1>
+                In my professional life, I have full-stack developed all my apps, as well as met with clients and
+                users to understand requirements and receive feedback. Check out my
+                <a href="{{ url_for('photography') }}">resume</a> for information on the technologies I use.
+              </h1>
+              <h1>
+                I often stick to geometric designs and cool colors (80% chance the latter is due to my red-green
+                <a id="colorblind" href="{{ url_for('static', filename='media/colorblind.jpg') }}">color blindness</a>)
+                but would have no problem adapting to another visual style if the situation calls for it.
+              </h1>
+
             </div>
           </div>
+
+          <div style="font-size:22px !important">
+            <h1>
+              In my free time I like to hike and photograph, both more often than not at the same time. Check out
+              my <a href="{{ url_for('photography') }}">photography!</a>
+            </h1>
+            <h1>
+              My favorite hobby is music. I have been playing the piano for 15 years, and it is definitely one of
+              my lifelong passions. Favorite bands include but are not limited to the following:
+            </h1>
+          </div>
+
         </div>
       </div>
-      <!-- /second section -->
-  </div>
+    </div>
 
+
+
+    <div id="about" class="pad-section hobby">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-12">
+
+            {% for i in range(12) %}
+              <a href="{{ album_links[i] }}" class="col-sm-3 albums" style="background: black; padding:0; margin:0;">
+                <img src= "../static/media/music{{i}}.jpg" style="width:285px; height:285px;">
+                <h1>{{ albums[i] }}</h1>
+              </a>
+            {% endfor %}
+
+           </div>
+        </div>
+      </div>
+      <div id="spacer">
+      </div>
 {% endblock %}

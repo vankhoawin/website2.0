@@ -55,7 +55,20 @@ def resume():
 
 @app.route('/about')
 def about():
-  return render_template('about.html')
+  albums = ['Radiohead', 'Purity Ring', 'Wilco', 'Elliot Smith',
+            'Telefon Tel Aviv', 'Kettel', 'Fleet Foxes', 'Grizzly Bear',
+            'Kanye West', 'Portishead', 'Tallest Man on Earth', 'Tame Impala']
+
+  album_links = ['http://youtu.be/9wCJPm19XYQ', 'http://youtu.be/PEQKwJred40',
+                 'http://youtu.be/gm-MpLGfogA', 'http://youtu.be/elWEQzv5sXY',
+                 'http://youtu.be/MQ2qEah8Fns', 'http://youtu.be/DS6ZIoV--6I',
+                 'http://youtu.be/L5dUsZ4Djd0', 'http://youtu.be/11yTdWvH9f8',
+                 'http://youtu.be/CPyKAmKxOAw', 'http://youtu.be/52bAsZI9xm8',
+                 'http://youtu.be/Wa3lyo_Eowc', 'http://youtu.be/hkaNT_hvypo']
+
+
+
+  return render_template('about.html', albums=albums, album_links=album_links)
 
 
 @app.route('/test')
