@@ -365,6 +365,28 @@ a .albums {
   pointer-events: none;
 }
 
+
+#resume #resume-link #resume-hover2 {
+  /*opacity: 0;*/
+  /*filter: alpha(opacity=0); *//* For IE8 and earlier */
+  width: 500px;
+  margin: 2.2% 38.5%;
+}
+
+#resume #resume-link a:hover + #resume-hover2 {
+  /*-webkit-transform: translate(0px, 40px);*/
+  opacity: 0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+  -webkit-transition: all .15s ease;
+}
+
+#resume #resume-link a:hover + #resume-hover1 {
+  -webkit-transform: translate(0px, -40px);
+  opacity: 0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+  -webkit-transition: all .15s ease;
+}
+
 #contact {
   background: url('../media/background.jpg') no-repeat center center fixed;;
   padding-top: 65px;
