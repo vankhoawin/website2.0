@@ -51,7 +51,7 @@ def photography():
 
 @app.route('/resume')
 def resume():
-    return render_template('resume.html', form=form)
+    return render_template('resume.html')
 
 
 @app.route('/about')
