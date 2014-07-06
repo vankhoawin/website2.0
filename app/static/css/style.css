@@ -70,7 +70,7 @@ html, body {
 }
 
 .navbar {
-    padding: 0.4% 0%;
+    padding: 6.5px 0;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.85);
 }
@@ -288,6 +288,69 @@ a .albums {
 #information .panel {
   opacity: 0.85;
 }
+
+
+/* padded section */
+
+#resume {
+  padding-top: 63px;
+  width:99.1%;
+}
+
+
+#resume div {
+  height: 46.2em;
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+  /*background: url('../media/header.jpg');*/
+}
+
+#resume > div {
+  background: url('../media/header.jpg');
+}
+
+
+#resume div div {
+  height: inherit;
+  cursor: pointer;
+  color: antiquewhite;
+  text-align: center;
+}
+
+#resume div div h1 {
+    margin-top: 50%;
+}
+
+#resume div div:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#resume div #front-end {
+  background-color: #B20000;
+}
+
+#resume div #back-end {
+  background-color: seagreen;
+}
+
+#resume div #framework {
+  background-color: goldenrod;
+}
+
+#resume #resume-link{
+  height: 8.249em;
+}
+
+#resume #resume-link div {
+  background-color: dodgerblue;
+}
+
+
+#resume #resume-link div h1 {
+    margin-top: 2.2%;
+}
+
 
 .content {
     display: table-cell;

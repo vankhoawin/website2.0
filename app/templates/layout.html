@@ -39,9 +39,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="{% if request.path == '/about' %} active {% endif %}"><a href="{{ url_for('about') }}">About</a></li>
           <li class="{% if request.path == '/resume' %} active {% endif %}"><a href="{{ url_for('resume') }}">Resume</a></li>
-          <li class=""><a href="#">Projects</a></li>
           <li class="{% if request.path == '/photography' %} active {% endif %}"><a href="{{ url_for('photography') }}">Photography</a></li>
-          <li class=""><a href="#">Contact</a></li>
+          <li class="{% if request.path == '/contact' %} active {% endif %}"><a href="{{ url_for('contact') }}">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
