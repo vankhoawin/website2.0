@@ -328,8 +328,51 @@ a .albums {
   filter: alpha(opacity=100);
 }
 
-#resume div #front-end {
+#resume div #resume-languages {
   background-color: #B20000;
+  z-index: 1;
+}
+
+#resume-languages-icons {
+  position:fixed;
+  margin-top:10%;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#resume-languages-icons:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  cursor: default;
+}
+
+#resume-languages-icons img {
+  height:120px;
+  width:120px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+#resume-languages-icons img:hover {
+  cursor: pointer;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+
+#resume-languages-icons img:hover + h1 {
+  /*opacity: 1.0;*/
+  /*filter: alpha(opacity=100);*/
+}
+
+#resume-languages-icons h1 {
+  margin-top: 30% !important;
+  -webkit-user-select: none;
+  background-color: #000000;
+  width: 80%;
+  margin-left: 10%;
+  /*opacity: 0;*/
+  /*filter: alpha(opacity=0);*/
 }
 
 #resume div .active {
@@ -339,12 +382,11 @@ a .albums {
   -webkit-transition: all .8s ease;
 }
 
-
-#resume div #back-end {
+#resume div #resume-software {
   background-color: seagreen;
 }
 
-#resume div #framework {
+#resume div #resume-site {
   background-color: goldenrod;
 }
 
@@ -399,6 +441,8 @@ a .albums {
   filter: alpha(opacity=0); /* For IE8 and earlier */
   -webkit-transition: all .15s ease;
 }
+
+
 
 #contact {
   background: url('../media/contact.jpg') no-repeat center center fixed;

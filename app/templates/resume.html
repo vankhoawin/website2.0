@@ -7,20 +7,28 @@
   <div id="resume">
     <div class="row">
 
-      <div class="col-sm-4" id="front-end">
-        <h1>Front-end</h1>
+      <div class="col-sm-4 slider" id="resume-languages">
+        <h1>Languages</h1>
       </div>
-      <div class="col-sm-4" id="back-end">
-        <h1>Back-end</h1>
+
+      <div class="col-sm-4" id="resume-languages-icons">
+          {% for i in range(8) %}
+            <img class="language-hover" id="icon{{i}}" src="../static/media/resume/language{{ i }}.png" alt="" />
+          {% endfor %}
+          <h1 id="language-header"></h1>
       </div>
-      <div class="col-sm-4" id="framework">
-        <h1>Frameworks</h1>
+
+      <div class="col-sm-4 slider" id="resume-software">
+        <h1>Software</h1>
+      </div>
+      <div class="col-sm-4 slider" id="resume-site">
+        <h1>About This Site</h1>
       </div>
 
     </div>
 
     <div class="row"  id="resume-link">
-      <a class="col-sm-12" href="https://drive.google.com/file/d/0B_KWEDMXhj1EcEFwSGppRm5SLVk/edit?usp=sharing"></a>
+      <a class="col-sm-12" target="_blank" href="https://drive.google.com/file/d/0B_KWEDMXhj1EcEFwSGppRm5SLVk/edit?usp=sharing"></a>
       <h1 id="resume-hover1">Resume</h1>
       <h1 id="resume-hover2">Link to Google Drive PDF</h1>
     </div>
