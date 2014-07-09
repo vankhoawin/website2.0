@@ -348,6 +348,7 @@ a .albums {
 
 #resume-software-icons {
   margin-left: 33.5%;
+  height: 40% !important;
 }
 
 
@@ -356,9 +357,15 @@ a .albums {
   z-index: -1;
   cursor: default !important;
   background-color: #011011;
-  height: 40% !important;
+  height: 30% !important;
   width: 30%;
   margin-top: 15%;
+}
+
+#resume-about-text {
+  margin-top: 5% !important;
+  float: left;
+  text-align: left;
 }
 
 #resume-languages-icons:hover,
@@ -485,16 +492,16 @@ a .albums {
   background: #F5F5DC;
   margin: 13.767% 30%;
   padding: 2% 0%;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-  -webkit-transition: all .3s ease;
+  /*opacity: 0.7;*/
+  /*filter: alpha(opacity=70);*/
+  /*-webkit-transition: all .3s ease;*/
 }
 
-#contact div .row:hover {
-  background: #F5F5DC;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-}
+/*#contact div .row:hover {*/
+  /*background: #F5F5DC;*/
+  /*opacity: 1.0;*/
+  /*filter: alpha(opacity=100);*/
+/*}*/
 
 form #message textarea{
     height: 10em;
