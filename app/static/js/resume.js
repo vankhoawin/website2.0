@@ -20,11 +20,29 @@ $(document).ready(function() {
     var languages = [('Python - Proficient'), ('C++ - Proficient'), ('Java - Familiar'), ('SQL - Familiar'),
                  ('HTML5 - Proficient'), ('CSS3 - Proficient'), ('Javascript - Familiar'), ('PHP - Rudimentary')];
 
+
   $('.language-hover').mouseover(function(){
     var source = $(this).attr('id');
-    var index = source.charAt(4);
-//    console.log($('#language-header').html());
-    $('#language-header').html(languages[index]);
+    var index = source.charAt(12);
+
+    $('#language-header').css("opacity", "100").html(languages[index]);
+
+  }).mouseout(function(){
+    $('#language-header').css("opacity", "0");
+  });
+
+
+  var softwares = [('Flask'), ('Eclipse'), ('PyCharm'), ('Git'),
+                 ('Adobe Photoshop'), ('Adobe Lightroom'), ('Windows'), ('Ubuntu')];
+
+  $('.software-hover').mouseover(function(){
+    var source = $(this).attr('id');
+    var index = source.charAt(12);
+
+    $('#software-header').css("opacity", "100").html(softwares[index]);
+
+  }).mouseout(function(){
+    $('#software-header').css("opacity", "0");
   });
 
 });

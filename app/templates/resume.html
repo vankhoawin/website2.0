@@ -12,18 +12,32 @@
       </div>
 
       <div class="col-sm-4" id="resume-languages-icons">
-          {% for i in range(8) %}
-            <img class="language-hover" id="icon{{i}}" src="../static/media/resume/language{{ i }}.png" alt="" />
-          {% endfor %}
-          <h1 id="language-header"></h1>
+        {% for i in range(8) %}
+          <img class="language-hover" id="languageicon{{i}}" src="../static/media/resume/language{{ i }}.png" alt="" />
+        {% endfor %}
+        <h1 id="language-header"></h1>
       </div>
 
       <div class="col-sm-4 slider" id="resume-software">
         <h1>Software</h1>
       </div>
+
+      <div class="col-sm-4" id="resume-software-icons">
+        {% for i in range(8) %}
+          <img class="software-hover" id="softwareicon{{i}}" src="../static/media/resume/software{{ i }}.png" alt="" />
+        {% endfor %}
+        <h1 id="software-header"></h1>
+      </div>
+
+
       <div class="col-sm-4 slider" id="resume-site">
         <h1>About This Site</h1>
       </div>
+
+      <div class="col-sm-4" id="resume-about">
+        <h1 id="resume-about-text">hello</h1>
+      </div>
+
 
     </div>
 
