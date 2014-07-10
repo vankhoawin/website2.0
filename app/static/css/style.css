@@ -514,6 +514,10 @@ a .albums {
   /*-webkit-transition: all .3s ease;*/
 }
 
+#contact h3 {
+    margin-top: 3.52%;
+}
+
 /*#contact div .row:hover {*/
   /*background: #F5F5DC;*/
   /*opacity: 1.0;*/
