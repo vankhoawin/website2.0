@@ -13,7 +13,7 @@ def photography():
     #stuff to get facebook api access
     FACEBOOK_APP_ID = '511339372322388'
     facebook = Pyfb(FACEBOOK_APP_ID)
-    token = 'CAACEdEose0cBADWohTjQVtZBt6MY1lSaJvJ6sHy7tcgmXrdhZCBI17wQTY5X4ZB83lqPB00z84KTzp3Go6lhL7DnnwtJn95ZAsbP9YrC6exMiMujxPCLiV3CeB2c32R9j9LHcz44lkOjEG3HZAFMDFPEnWBQKq0G3irSkj2K1dWtm7npAfbZByxmnXO7cnHm0ZD'
+    token = '511339372322388|bUxMF9MoQPhgC-99sInvvkbef0w'
     facebook.set_access_token(token)
 
     #get info about me

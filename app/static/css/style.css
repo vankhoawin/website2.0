@@ -10,7 +10,8 @@ This stylesheet and the associated (x)html may be modified in any way to fit you
 html, body {
   height: 100%;
   width: 100%;
-    font-family: Roboto, Helvetica, Arial;
+  font-family: 'Karma', serif;
+  font-weight: 500;
 }
 
 @font-face {
@@ -24,10 +25,11 @@ html, body {
     font-weight: bold;
 }
 
+
 .cover-text {
      width: 1050px;
-    font-family: CODE;
-    font-weight: 500;
+    font-family: Raleway, serif;
+    font-weight: 300;
     font-size: 40px;
 }
 
@@ -139,7 +141,7 @@ html, body {
 #about h1 {
     margin-bottom: 20px;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.4;
 }
 
@@ -206,7 +208,7 @@ a .albums {
     padding-top: 40%;
     color:antiquewhite;
     font-size: 40px !important;
-
+    font-weight: 300 !important;
     opacity: 1.0;
     filter: alpha(opacity=100);
 }
@@ -291,6 +293,11 @@ a .albums {
 
 
 /* padded section */
+
+#resume {
+    font-family: Raleway, serif;
+    font-weight: 400;
+}
 
 #resume {
   padding-top: 63px;
@@ -388,7 +395,7 @@ a .albums {
 
 #resume-languages-icons img:hover,
 #resume-software-icons img:hover {
-  cursor: pointer;
+  /*cursor: pointer;*/
   opacity: 1.0;
   filter: alpha(opacity=100);
 }
@@ -416,6 +423,16 @@ a .albums {
   /*opacity: 0;*/
   /*filter: alpha(opacity=0); *//* For IE8 and earlier*/
   -webkit-transition: all .8s ease;
+}
+
+#resume-about {
+    -webkit-transform: translate(600px, 0px);
+    -webkit-transition: all 1.2s ease !important;
+}
+
+#resume div .active + #resume-about {
+    -webkit-transform: translate(0px, 0px);
+    font-size:500px;
 }
 
 #resume div #resume-software {
