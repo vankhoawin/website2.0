@@ -14,6 +14,11 @@ html, body {
   font-weight: 500;
 }
 
+
+/*::-webkit-scrollbar {*/
+    /*display: none;*/
+/*}*/
+
 @font-face {
     font-family: CODE;
     src: url('../fonts/CODE%20Light.otf');
@@ -213,7 +218,6 @@ a .albums {
     filter: alpha(opacity=100);
 }
 
-
 #services {
   background-color: #306d9f;
   color: #ffffff;
@@ -313,7 +317,10 @@ a .albums {
 }
 
 #resume > div {
-  background: url('../media/resume/resume.jpg');
+  background: url('../media/resume/res-1.jpg');
+  background-size: cover;
+  -webkit-blur: blur(8px);
+  filter:blur(8px);
 }
 
 
@@ -495,6 +502,14 @@ a .albums {
   -webkit-transition: all .15s ease;
 }
 
+
+#photography {
+    padding-top:65px;
+}
+
+#photography .container-fluid {
+    padding-left: 0;
+}
 
 
 #contact {

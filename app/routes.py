@@ -10,39 +10,11 @@ def cover():
 
 @app.route('/photography')
 def photography():
-    #stuff to get facebook api access
-    FACEBOOK_APP_ID = '511339372322388'
-    facebook = Pyfb(FACEBOOK_APP_ID)
-    token = '511339372322388|bUxMF9MoQPhgC-99sInvvkbef0w'
-    facebook.set_access_token(token)
 
-    #get info about me
-    me = facebook.get_myself()
-    photos = facebook.get_photos()
-
-    #get da albums
-    albums = facebook._client.get_list(me.id, 'albums')
-
-    album_photos = []
-    album_names = []
-    for i in albums:
-        photos = facebook.get_photos(i.id)
-        album_names.append(i.name)
-
-        temp_phot = []
-        count = 0
-        for j in photos:
-            #get only 10 photos per album
-            if count < 10:
-                temp_phot.append(j.picture)
-            else:
-                break
-        album_photos.append(temp_phot)
-
-    album_photos = zip(album_names,album_photos)
+    album_names = ["murphy's ranch", 'yosemite', 'la jolla', 'london + scotland']
 
 
-    return render_template('photography.html', photos=photos, album_photos=album_photos, album_names=album_names)
+    return render_template('photography.html', album_names=album_names)
 
 
 @app.route('/resume')
