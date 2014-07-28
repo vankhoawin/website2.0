@@ -1,1 +1,2 @@
-van website 2.0. runs on flask, jquery and bootstrap. Utilizes facebook and github API.
+van website 2.0. Written in Python using Flask + extensions. Utilizes Jquery and Bootstrap. Features Flickr API for
+photography section.
