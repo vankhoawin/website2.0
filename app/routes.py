@@ -1,9 +1,8 @@
-from flask import Flask, render_template, request
+from flask import render_template, request
 from pyfb import Pyfb
 from forms import ContactForm
+from app import app
 
-app = Flask(__name__)      
- 
 @app.route('/')
 def cover():
     return render_template('cover.html')
@@ -70,10 +69,10 @@ def contact():
     return render_template('contact.html', form=form)
 
 
-@app.route('/test')
-def test():
-    return render_template('layouttest.html')
+#@app.route('/test')
+#def test():
+#    return render_template('layouttest.html')
 
  
-if __name__ == '__main__':
-  app.run(debug=True)
+#if __name__ == '__main__':
+#  app.run(debug=True)
